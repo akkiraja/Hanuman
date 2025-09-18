@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Bhishi App",
+    "slug": "bhishi-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSContactsUsageDescription": "This app needs access to your contacts to add members to your bhishi groups."
+      }
+    },
+    "android": {
+      "permissions": [
+        "READ_CONTACTS"
+      ],
+      "package": "com.bhishiapp.mobile",
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow Bhishi App to access your contacts to add members to your groups."
+        }
+      ]
+    ],
+    "sdkVersion": "51.0.0"
+  }
+}
