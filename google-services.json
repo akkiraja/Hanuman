@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "377271083409",
+    "project_id": "tiptop-455d0",
+    "storage_bucket": "tiptop-455d0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377271083409:android:a5d7841870b38531d5ba30",
+        "android_client_info": {
+          "package_name": "com.bhishiapp.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoyjxsQjFgNa5F4Ba1Wzv2i91BU8CveoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

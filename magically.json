@@ -1,0 +1,572 @@
+{
+  "version": "1.0.0",
+  "projectId": "758cab24-6813-4245-b862-1c7cd49fd7aa",
+  "projectName": "Chitti Manager",
+  "fileManifest": [
+    {
+      "path": "App.tsx",
+      "language": "typescript",
+      "hash": "07a7cea009a2f075ad577ccb4033cc20542790756684f344d6bb9dcafb4d1fbc"
+    },
+    {
+      "path": "navigation/index.tsx",
+      "language": "typescript",
+      "hash": "e11fdf7286a5e185ebabe4bae74c9821ba0693714fd2d30fa4f7ff4dcbeea303"
+    },
+    {
+      "path": "screens/HomeScreen.tsx",
+      "language": "typescript",
+      "hash": "44344b04e7380bcdb69eb5b6ca0bdd9c918fec5584ee3ccc675925ed76321eab"
+    },
+    {
+      "path": "stores/authStore.ts",
+      "language": "typescript",
+      "hash": "d971baa59ec4cfc0c879bb86d6ef9122173dd81c45ea0e6e399be71886e60e16"
+    },
+    {
+      "path": "constants/colors.ts",
+      "language": "typescript",
+      "hash": "1f45bb240152b0def44f555e463c9f8aea07fbeb1e599c8e774179ca87295e95"
+    },
+    {
+      "path": "types/chitFund.ts",
+      "language": "typescript",
+      "hash": "b37791d09f0acd3279f246132231321ada4ce1776fa07f649987f17d60bf19b5"
+    },
+    {
+      "path": "constants/index.ts",
+      "language": "typescript",
+      "hash": "1b0873b1cc8e477a0be67ba1261d2679eef68ea0a18fc02aaba5a2b8f7491499"
+    },
+    {
+      "path": "stores/chitStore.ts",
+      "language": "typescript",
+      "hash": "5aba56d38797bb44d953a5941926cc1adea08654ec8dca244a48c56e01c8c3b9"
+    },
+    {
+      "path": "screens/GroupDetailScreen.tsx",
+      "language": "typescript",
+      "hash": "baae68b003741643fe46e5f3d550ec94d08301d817825d8c18e675e6ca9f6afa"
+    },
+    {
+      "path": "components/CreateBhishiFlow.tsx",
+      "language": "typescript",
+      "hash": "dcd03b9d56648a26f0eb38d118e66398802b3b5d0e9b68cbf1c9cd761be20c66"
+    },
+    {
+      "path": "libs/supabase.ts",
+      "language": "typescript",
+      "hash": "b6ecce7fe6a070cc6293b98581f944f3f4a0190066e297abc2dc55807b55989e"
+    },
+    {
+      "path": "screens/AuthScreen.tsx",
+      "language": "typescript",
+      "hash": "f629ee90bbca1ac12c114b9b0994abf211f629a4c178930402ccf62129db800b"
+    },
+    {
+      "path": "supabase/migrations/003_fix_rls_policies.sql",
+      "language": "text",
+      "hash": "1fba5af7804033af426c20b384a42b2b5b63eefdb9b4e0627c0000e48aec725e"
+    },
+    {
+      "path": "supabase/migrations/004_fix_bhishi_groups_recursion.sql",
+      "language": "text",
+      "hash": "050ecdad93606cbd5b19008c920e032aa5de40b31f3c8085ea0a304c6ef07131"
+    },
+    {
+      "path": "app.json",
+      "language": "json",
+      "hash": "47580a487cce5a183e038949b23c6e47961515ea5a08d6b69bd86ae8585d5221"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "hash": "e0bb2c15ff5470cb8de81fc6ecd080d0a92c8ba17412710d9dce173bb7ea7379"
+    },
+    {
+      "path": "assets/icon.png",
+      "language": "text",
+      "hash": "384d6a9792024e8d4d0493bce7e951ea3bfb7e984b59f3e4976b977b50d1045e"
+    },
+    {
+      "path": "assets/splash.png",
+      "language": "text",
+      "hash": "a4682dd1af06f5aebb8eb12d8b5fbc4aefec0ed38768cc46831f42b447fd7cc0"
+    },
+    {
+      "path": "assets/adaptive-icon.png",
+      "language": "text",
+      "hash": "5067fbdb570204c63b3426ea2d927ce5b626b90e07bab95582cdb588a9c1f265"
+    },
+    {
+      "path": "assets/favicon.png",
+      "language": "text",
+      "hash": "5d2c48d62113f3f366d0f22555bbf7aa8c38073a269e861879e6244929008bc7"
+    },
+    {
+      "path": "babel.config.js",
+      "language": "javascript",
+      "hash": "db8bbf8a1c281f7986a471ff96c277a07b47aedfd519f4713af4dead27016c53"
+    },
+    {
+      "path": "metro.config.js",
+      "language": "javascript",
+      "hash": "ff1d6644dcf4766d45a45848503424228b7e8136bd18ef1caa5b2fb8848b0c5a"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "hash": "cc3d96cc12482613c70f7be1b9e2db469be01c176e93c8a7e22b9e8ad3d8e5f1"
+    },
+    {
+      "path": "supabase/migrations/003_add_public_profiles_policy.sql",
+      "language": "text",
+      "hash": "0e289972aaa6ad4e812f82c28f220c42dc992c1b5ba0588839cc0fc9b22dc0dc"
+    },
+    {
+      "path": "screens/ProfileScreen.tsx",
+      "language": "typescript",
+      "hash": "eccae32b01bbe52868942b1e74d5fb2d0b7ea5e0d93a6b098771420c94004f76"
+    },
+    {
+      "path": "migrations/007_add_delete_policy_bhishi_groups.sql",
+      "language": "text",
+      "hash": "3160037f0ca0eb14bd160101709fe2b786fb3790decca6d9a52d343153a6cea1"
+    },
+    {
+      "path": "migrations/008_fix_group_visibility_for_members.sql",
+      "language": "text",
+      "hash": "7eb9566dbc06a73b473c24618ebd951c27d25bc5a9390279ac5ebd2af16100be"
+    },
+    {
+      "path": "migrations/008_add_upi_to_profiles.sql",
+      "language": "text",
+      "hash": "558afe376996bea97c6c142650216b63af3e3550f413449697560209056acb76"
+    },
+    {
+      "path": "migrations/008_add_member_payment_update_policy.sql",
+      "language": "text",
+      "hash": "145f09a6668146dd5537b84c50b0c7649e06a991008a3ed02bc2d56f6fd53302"
+    },
+    {
+      "path": "supabase/migrations/008_fix_member_visibility_rls.sql",
+      "language": "text",
+      "hash": "99a4bbde4e34faf15eaaf2c93e08fcf5654dae8eb33b1d744fbdeb5364195e88"
+    },
+    {
+      "path": "screens/TutorialsScreen.tsx",
+      "language": "typescript",
+      "hash": "fe3c13f256aae3895cc4f55cdbf74733ba9a6d53b7a0da25cfa4161400f34085"
+    },
+    {
+      "path": "migrations/008_create_push_tokens.sql",
+      "language": "text",
+      "hash": "7a3844832f0dcd5cb9b899f37edd5c9b6d8959e184c301da6fc35378e94ce0cf"
+    },
+    {
+      "path": "services/notificationService.ts",
+      "language": "typescript",
+      "hash": "170702ef4e2d76b73a77f74f7505e705fb66f160073f77fd7e2a8ed7aef4a784"
+    },
+    {
+      "path": "supabase/functions/send-notifications/index.ts",
+      "language": "typescript",
+      "hash": "5f606ab942e2721f5c98866f7c4efb55e3f756666c241b530641705d09f30a5d"
+    },
+    {
+      "path": "utils/notificationUtils.ts",
+      "language": "typescript",
+      "hash": "27abe158b799cc8d4db240f725493a50bab14093095b86ccef899d5114d909b6"
+    },
+    {
+      "path": "components/NotificationTest.tsx",
+      "language": "typescript",
+      "hash": "8cb142e1da9c183b3719ebe1ad341856f3176ca11f363edc30bfb40ad5cc82a7"
+    },
+    {
+      "path": "screens/PhoneOTPScreen.tsx",
+      "language": "typescript",
+      "hash": "83dc0028a84b7d1d62e3367e8cbb20a6a410055fbf46499a271fdc1af8d829e0"
+    },
+    {
+      "path": "migrations/009_fix_handle_new_user_for_phone_auth.sql",
+      "language": "text",
+      "hash": "24dbeed1f69039a85b87b8ed45a80093b8f726fe95510e4e5efea626784993a6"
+    },
+    {
+      "path": "migrations/010_make_email_nullable_for_phone_auth.sql",
+      "language": "text",
+      "hash": "28ab42a829bee1e1c485b8f050ecd2815e56560466d3b8c7f9a8914643a50369"
+    },
+    {
+      "path": "components/LuckyDrawSpinner.tsx",
+      "language": "typescript",
+      "hash": "59321fca60cbe272e73a70b33745371366ad60357b2d1f0eab710d5a23179105"
+    },
+    {
+      "path": "components/DashboardDrawSpinner.tsx",
+      "language": "typescript",
+      "hash": "91ea2c81a3bf1d9c605bfb9dbb84dc1ec22b1479cfc49fa933c5186cb4744e2f"
+    },
+    {
+      "path": "components/BhishiNamesSection.tsx",
+      "language": "typescript",
+      "hash": "5fd653bf7ed61dad5f9c0f011d32be9e89da5b246adadaff82b1bc33683d07d9"
+    },
+    {
+      "path": "components/EmptyDashboard.tsx",
+      "language": "typescript",
+      "hash": "c665589b6e38a200ca2ad91458adbc7fca17c27c131c20791fc4af68fb4f9b5f"
+    },
+    {
+      "path": "components/HowItWorksSection.tsx",
+      "language": "typescript",
+      "hash": "996f3b1ffc5e8322233438307b305df7c3ad3a8bb863bbdee9e8e56af11c4233"
+    },
+    {
+      "path": "components/AppBenefitsSection.tsx",
+      "language": "typescript",
+      "hash": "f4e63a1040acabd7355122c3362da07f12f2794e4ffdbdc6085231bd062279cd"
+    },
+    {
+      "path": "migrations/003_fix_minimum_members_constraint.sql",
+      "language": "text",
+      "hash": "9c098cc6acb67ca8cae10fe2ae88261d8d281fe058268f9ab93932ad80a0f628"
+    },
+    {
+      "path": "services/contactsService.ts",
+      "language": "typescript",
+      "hash": "ae5cf256bc059a557452e027d01e69bd11376178e9b2794125acecc44342cf73"
+    },
+    {
+      "path": "migrations/008_make_email_optional_in_group_members.sql",
+      "language": "text",
+      "hash": "037954fbcc4a63e203f8791efa1de3259c805add6223d2c5cac9481c02d5acec"
+    },
+    {
+      "path": "migrations/011_increase_group_member_limit_to_25.sql",
+      "language": "text",
+      "hash": "fb3e67bbf2966e57494bced5ef081af27fa2cad2839bc555037674f8c50eae79"
+    },
+    {
+      "path": "migrations/012_increase_group_limit_to_40.sql",
+      "language": "text",
+      "hash": "1005afdf32a4427e6525c8588ed90033f1d0ba4a8cb0e854074065af7f212e33"
+    },
+    {
+      "path": "migrations/013_add_draw_started_at.sql",
+      "language": "text",
+      "hash": "79be54d12bc6801d79a2f45a46cde6a8eaa747bf1be07c2bf9576a54fe706cf7"
+    },
+    {
+      "path": "magically/utils/NavigationLogger.ts",
+      "language": "typescript",
+      "hash": "11717b3be6a297a776ff89f0aec1d16ade9fc662a01329908aa398e7a47ccb95"
+    },
+    {
+      "path": "stores/AppStateStore.ts",
+      "language": "typescript",
+      "hash": "405447d5d463b644410f4cfd777e0d32b9135a166e30a1594767e8371e5879e4"
+    },
+    {
+      "path": "screens/DashboardTestingScreen.tsx",
+      "language": "typescript",
+      "hash": "5ff232f46a38d9e8b400515fd7b1b175132fcb7ebf3cfd40ad18ee97ed38e428"
+    },
+    {
+      "path": "supabase/functions/create-payment/index.ts",
+      "language": "typescript",
+      "hash": "63b5f68cd5c3173f5160698fdcaf48b0042c23ea547cd5f86f335486d6d4b06a"
+    },
+    {
+      "path": "services/cashfreeService.ts",
+      "language": "typescript",
+      "hash": "a2301b61f41c28c28bb43bac7431f571defcc4c9eec6f5fb3b75bb1a5ca02241"
+    },
+    {
+      "path": "types/payment.ts",
+      "language": "typescript",
+      "hash": "c7a41520d92a1fea060ba6eb60f71c21df9095367f5dbd3dc1e14621b964f903"
+    },
+    {
+      "path": "screens/PaymentSuccessScreen.tsx",
+      "language": "typescript",
+      "hash": "9d1f550f3c477257ed08026a48092c75af5bee8d36d7b8e75a8a203c3478c607"
+    },
+    {
+      "path": "components/MemberDrawSpinner.tsx",
+      "language": "typescript",
+      "hash": "a97e6cae59a04c849204f0c5bd5da25be833dd5892adfa19585e01269ffa2268"
+    },
+    {
+      "path": "migrations/008_create_payment_audit_table.sql",
+      "language": "text",
+      "hash": "1e5c9dfb1bb80186c6414d28c415531935a211f7b54e4b5b58edd93b1860a7a8"
+    },
+    {
+      "path": "supabase/functions/cashfree-webhook/index.ts",
+      "language": "typescript",
+      "hash": "99af412d6c848988bcd9e04488f30b635f0e019b8a64afc48cdeab3b4480bcdc"
+    },
+    {
+      "path": "constants/translations.ts",
+      "language": "typescript",
+      "hash": "f1c9faa0cf0aab50337ba0d191f49c348ce5766356cd0ff741c3c0ccd03df7ed"
+    },
+    {
+      "path": "components/ui/ModernGroupCard.tsx",
+      "language": "typescript",
+      "hash": "653e009def7261a302354683e1a232f3a8e21972f92248a1efeb25c0e9ecf78f"
+    },
+    {
+      "path": "components/ui/ModernStatsCard.tsx",
+      "language": "typescript",
+      "hash": "c3dc9d28cd3f814b8390e2621348a073fcf521ca906eead2d2a2061a2d69deb7"
+    },
+    {
+      "path": "components/ui/WinnerAnnouncementCard.tsx",
+      "language": "typescript",
+      "hash": "f5ea1f751e20b893ab972e21db7019c3a4fd876342385ed9ce12e124f63ae94f"
+    },
+    {
+      "path": "components/ui/ModernHeader.tsx",
+      "language": "typescript",
+      "hash": "dca06b6c639b989250031eb3b6f98551e25df43f33a2a1e74d1a39ea44312f68"
+    },
+    {
+      "path": "components/ui/InsightCard.tsx",
+      "language": "typescript",
+      "hash": "c8f05ea64b4515f9fdc6c22ab8aee9466c74dbf5a0639b1c31ffe0e269e8048c"
+    },
+    {
+      "path": "utils/dateCalculations.ts",
+      "language": "typescript",
+      "hash": "f0d0fbd86b1e2cc649d3133f0ac70de7b1a6827739e16ed5befa94ec7984a6b7"
+    },
+    {
+      "path": "migrations/014_add_bidding_system.sql",
+      "language": "text",
+      "hash": "0fe9d8dc61396211f18a7af21899b61a9a45ca7efbf4f0a63f986346c147176c"
+    },
+    {
+      "path": "stores/biddingStore.ts",
+      "language": "typescript",
+      "hash": "7426378878875d0bb0c8b9ace52a444346ca888e178977b0ce0a7f18df4002e5"
+    },
+    {
+      "path": "components/ui/BiddingGroupCard.tsx",
+      "language": "typescript",
+      "hash": "cdf2151866cefedd03058e322369ca039d390b7f28b7e5ca650a9274bae30c13"
+    },
+    {
+      "path": "screens/BiddingGroupDetailScreen.tsx",
+      "language": "typescript",
+      "hash": "e8ccb11fa133e9a34af587916d3e81e86df6bf0553664df081322d50eea0b73d"
+    },
+    {
+      "path": "components/bidding/BidHistoryModal.tsx",
+      "language": "typescript",
+      "hash": "750a102e33d639cedc14bb6a0d6b7c6b0a3e3bf3c4e196c88a833b68b5dc6a64"
+    },
+    {
+      "path": "components/bidding/MemberListSection.tsx",
+      "language": "typescript",
+      "hash": "65bd64e98d373253cd6d6d79c809abcda2407892d0ea72e2d40afb28117354e4"
+    },
+    {
+      "path": "components/bidding/BidConfirmationModal.tsx",
+      "language": "typescript",
+      "hash": "1bcf71cf56c6bad06a9a0041869b96b67f2ba3abc9aef91a9cf4b707b57ed93a"
+    },
+    {
+      "path": "components/bidding/WinnerCelebrationModal.tsx",
+      "language": "typescript",
+      "hash": "126c124781500d809e1823e937990904e331a6f5da430d97742147a5201e9355"
+    },
+    {
+      "path": "components/bidding/EmptyBiddingState.tsx",
+      "language": "typescript",
+      "hash": "24511a631a33657500aec50f679705c4972779146a721d139138bc0b3d9f9a51"
+    },
+    {
+      "path": "components/bidding/HelpTooltipModal.tsx",
+      "language": "typescript",
+      "hash": "c9ade57dbfb83f8d58c1182d99c4ada1341ddda8a9a30220cad27b4dadb8d86a"
+    },
+    {
+      "path": "components/bidding/LoadingSkeleton.tsx",
+      "language": "typescript",
+      "hash": "cfe9261d532dc68879ddc2ccb5baf4242849aadc3589cfcb31c3c816bf860dd6"
+    },
+    {
+      "path": "hooks/useErrorHandler.ts",
+      "language": "typescript",
+      "hash": "76a2420fdc84ef3c0137c6b9d5c9a015df0bc588003f9279e3221787f715c5db"
+    },
+    {
+      "path": "hooks/useAutoCloseRounds.ts",
+      "language": "typescript",
+      "hash": "2ba2aa87dce8f92160aa0e1315289bf89fc3d292684b6bebf4c54d3505cf80a6"
+    },
+    {
+      "path": "components/bidding/CreateRoundModal.tsx",
+      "language": "typescript",
+      "hash": "327002d4ef8bbafff5d79880f11af08edb5cda73725d8590cd033ddd5336d162"
+    },
+    {
+      "path": "screens/BiddingRoundScreen.tsx",
+      "language": "typescript",
+      "hash": "e122008e2df934ffef748a95766adda83521267364bbad5fc11c7f8ec35f6b27"
+    },
+    {
+      "path": "components/bidding/LiveBiddingFeed.tsx",
+      "language": "typescript",
+      "hash": "4af1d99612e0bf4203435482108bfd5f70989b9fe16904d0869081c44e48c323"
+    },
+    {
+      "path": "components/bidding/CountdownTimer.tsx",
+      "language": "typescript",
+      "hash": "22ab7c050b4258e198f0d1f9d207ceae7dcd716d9d94a062540f72111386ca2c"
+    },
+    {
+      "path": "components/bidding/PastRoundsHistory.tsx",
+      "language": "typescript",
+      "hash": "bcb29557c420a694a2fa34c8847e4edff237b0406780d16fe6e49dea85ac9e26"
+    },
+    {
+      "path": "PROJECT.md",
+      "language": "markdown",
+      "hash": "7ef1f0e202deecc7ea3680ab5d1c939ecfaf275f851f7f6ec62d0b6a609526d9"
+    },
+    {
+      "path": "migrations/003_fix_member_bids_rls.sql",
+      "language": "text",
+      "hash": "da0968cde610332cae16b33bffc46ffcec23e6563c3a68018c942170152018ed"
+    },
+    {
+      "path": "components/bidding/StickyBidEntry.tsx",
+      "language": "typescript",
+      "hash": "ef010c65abb0b579e3b1372c64d02a00ddf4be413254f0b8db983d68b5e88415"
+    },
+    {
+      "path": "components/bidding/AdminControlsSection.tsx",
+      "language": "typescript",
+      "hash": "a6ad599cb5e151740148938a63bc39fe6abf28df2feb554dbca781c9d120b959"
+    },
+    {
+      "path": "components/bidding/FooterStatusSection.tsx",
+      "language": "typescript",
+      "hash": "997e1cdd71e68390847fa8614c4c70b7e90f9a270a534916916d37b7ae9f1eb2"
+    },
+    {
+      "path": "components/bidding/OverviewCardsSection.tsx",
+      "language": "typescript",
+      "hash": "533e38ad919b43e1ba175f48e23d2480858f8aa6d1ca8e78f977a98d78f21a01"
+    },
+    {
+      "path": "components/bidding/LiveBiddingSection.tsx",
+      "language": "typescript",
+      "hash": "6591445e71daaf8cf2e4ca7d4459a08e7424beebedffd2e17ad7eb1437bbf6d7"
+    },
+    {
+      "path": "components/bidding/CurrentRoundCard.tsx",
+      "language": "typescript",
+      "hash": "88fb944b84e95784594147cb52ca2ead923bce6ccb18886b39d8a53cb4440dbb"
+    },
+    {
+      "path": "components/bidding/BiddingRulesSection.tsx",
+      "language": "typescript",
+      "hash": "08b9e29c69c953081932d296dbae36c685c04fa85702c11da9a948fe0c54c26f"
+    },
+    {
+      "path": "screens/GroupMembersScreen.tsx",
+      "language": "typescript",
+      "hash": "bafe6f69b10cd00fbabb16298ea7bc44dcd2f97217c6e7c8607ecaba9e3f9a0e"
+    },
+    {
+      "path": "screens/PastRoundsScreen.tsx",
+      "language": "typescript",
+      "hash": "bc37270306dd0bdc9dd0e0425ae4db79b19acc6c45baa4c118cc21bdac61b11e"
+    },
+    {
+      "path": "styles/groupMembersScreenStyles.ts",
+      "language": "typescript",
+      "hash": "11ab74b7dcc3f30160640187370a407098d0345345ffce70998beeefb8df2403"
+    },
+    {
+      "path": "styles/pastRoundsScreenStyles.ts",
+      "language": "typescript",
+      "hash": "bf00ffd57da899d47558b44b9e74c900490f7791b6628f2bda200a86f59b5846"
+    },
+    {
+      "path": "components/bidding/MembersPreviewSection.tsx",
+      "language": "typescript",
+      "hash": "027eb2215ab0d3163006e81851a2f40ac095dc55bdb2c47abe06dd79008e8ad0"
+    },
+    {
+      "path": "components/bidding/RoundsPreviewSection.tsx",
+      "language": "typescript",
+      "hash": "fb68cafb1321619677eff09883881e1dca66187d69581ddaf0761b9398c0ee41"
+    },
+    {
+      "path": "components/bidding/CollapsibleRulesSection.tsx",
+      "language": "typescript",
+      "hash": "49c417059e03d3a92ac70897c4ab8e5947e687c3763af33262419e375b2a32ea"
+    },
+    {
+      "path": "styles/membersPreviewSectionStyles.ts",
+      "language": "typescript",
+      "hash": "971739ccee9e5eeea710f10f602732bfa64ac44e7a6e7be898fd4c4bbeb79f4a"
+    },
+    {
+      "path": "styles/roundsPreviewSectionStyles.ts",
+      "language": "typescript",
+      "hash": "144d32af2f93526a441e5eac5ef54a24e95f937627ba6588819e6c238a89e6ed"
+    },
+    {
+      "path": "styles/collapsibleRulesSectionStyles.ts",
+      "language": "typescript",
+      "hash": "06ff17406d7325ab0b4c2ebeafd5fdfac4f52d055669b6c0bef4608afc281e2a"
+    },
+    {
+      "path": "components/LuckyDrawHomeModal.tsx",
+      "language": "typescript",
+      "hash": "52874cd59466e4f6d9bd5c7fe2c2f31cd51c056575ad676519eb4bb734aa5440"
+    },
+    {
+      "path": "components/bidding/BidChatBubble.tsx",
+      "language": "typescript",
+      "hash": "86330c4b2045d6d50eb2c311408843bf9952883e690dd1d24b450eeedd100765"
+    },
+    {
+      "path": "components/bidding/BidChatFeed.tsx",
+      "language": "typescript",
+      "hash": "5a4ef5a9eefc3c471609111b7af5c4a0539d81803a3a092631c8f212fd4abd6c"
+    },
+    {
+      "path": "components/bidding/ChatInputBar.tsx",
+      "language": "typescript",
+      "hash": "50974933330989d4b123285ee89c5f7ec2da21e498dde53845f56ee174dd577e"
+    },
+    {
+      "path": "components/bidding/CompactRoomInfo.tsx",
+      "language": "typescript",
+      "hash": "605aed1334980bbc6b3cc76ba7041406573be839963f041cab75d8ce80bf7e1a"
+    },
+    {
+      "path": "components/bidding/FloatingAdminControls.tsx",
+      "language": "typescript",
+      "hash": "dcf99a6f634f1c568b86075d126ece543ae0a58b25dabc4d0ed40580f2ae47fd"
+    },
+    {
+      "path": "supabase/functions/send-sms/index.ts",
+      "language": "typescript",
+      "hash": "dc9d3d951dd3ea94eeb48ee8f57179632700916a14c95a33efb9a21719068e98"
+    },
+    {
+      "path": "components/ui/WhatsAppSupport.tsx",
+      "language": "typescript",
+      "hash": "8ee4951b1a99b823967b5081de734b9486711e2a58ca43d360d535dc5d36d31a"
+    }
+  ]
+}
