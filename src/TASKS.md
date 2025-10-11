@@ -1,0 +1,149 @@
+# Tasks & Specs
+
+*Updated: 2025-10-10T09:52:11.491Z*
+
+## 📋 Pending
+
+### Database Schema for WhatsApp (technical)
+ID: whatsapp-database
+
+**User Story:** As a developer, I need database tables to store WhatsApp opt-in status and message logs
+
+**Specs:**
+- [ ] 1. Add profiles.whatsapp_opt_in boolean column (default false)
+- [ ] 2. Create whatsapp_messages table with id, group_id, user_id, phone, template_name, template_params, provider_msg_id, status, attempts, error_message, created_at, processed_at
+- [ ] 3. Add indexes on whatsapp_messages for group_id, user_id, status, created_at
+- [ ] 4. Add RLS policies for whatsapp_messages table
+
+### WhatsApp Edge Function (send-whatsapp) (feature)
+ID: whatsapp-edge-function
+
+**User Story:** As the system, I can send WhatsApp messages via Twilio to users who opted in
+
+**Specs:**
+- [ ] 1. Create send-whatsapp edge function with Twilio integration
+- [ ] 2. Support type: single_whatsapp for immediate sends
+- [ ] 3. Support type: group_whatsapp for enqueueing jobs
+- [ ] 4. Use TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_FROM env vars
+- [ ] 5. Format phone numbers to E.164 (whatsapp:+91XXXXXXXXXX)
+- [ ] 6. Support templates for lucky_draw_start, bidding_start, winner_declared
+- [ ] 7. Log all sends to whatsapp_messages table
+
+### WhatsApp Queue Worker (technical)
+ID: whatsapp-worker
+
+**User Story:** As the system, I can reliably process WhatsApp messages from queue with retries
+
+**Specs:**
+- [ ] 1. Create process-whatsapp-queue edge function
+- [ ] 2. Process messages with status='pending' from whatsapp_messages
+- [ ] 3. Implement concurrency limit (batch of 5 messages)
+- [ ] 4. Retry logic: max 3 attempts with exponential backoff
+- [ ] 5. Update status to 'sent', 'failed', or 'pending' with error logging
+- [ ] 6. Store Twilio message SID in provider_msg_id field
+
+### Update send-notifications for WhatsApp (feature)
+ID: update-send-notifications
+
+**User Story:** As the system, I automatically enqueue WhatsApp messages when events occur
+
+**Specs:**
+- [ ] 1. Add WhatsApp enqueueing for lucky_draw_start event
+- [ ] 2. Add WhatsApp enqueueing for bidding_start event
+- [ ] 3. Add WhatsApp enqueueing for winner_declared event
+- [ ] 4. Only enqueue for users with whatsapp_opt_in=true AND phone number
+- [ ] 5. Include template parameters (groupName, winnerName, amount, etc.)
+
+### WhatsApp Opt-in UI (screen)
+ID: frontend-opt-in
+
+**User Story:** As a user, I can opt-in to receive WhatsApp notifications from my profile
+
+**Specs:**
+- [ ] 1. Add WhatsApp opt-in toggle in ProfileScreen
+- [ ] 2. Save opt-in status to profiles.whatsapp_opt_in
+- [ ] 3. Show explanation text about WhatsApp notifications
+- [ ] 4. Validate phone number exists before allowing opt-in
+
+### Admin View for Failed Messages (screen)
+ID: admin-view
+
+**User Story:** As an admin, I can view failed WhatsApp messages and retry them
+
+**Specs:**
+- [ ] 1. Create AdminMessagesScreen to list failed whatsapp_messages
+- [ ] 2. Show member name, phone, error message, attempts
+- [ ] 3. Add retry button for failed messages
+- [ ] 4. Show list of members without phone or opt-in
+
+## ✅ Completed
+
+### Client Realtime Spinner Sync (feature)
+ID: client-realtime-spinner
+
+**User Story:** As a group member, I see the spinner modal appear instantly when admin starts draw
+
+**Specs:**
+- [ ] 1. Subscribe to draws table INSERT events for current group
+- [ ] 2. Show spinner modal immediately on INSERT event (revealed=false)
+- [ ] 3. Run spinner for duration_seconds from start_timestamp
+- [ ] 4. On UPDATE event (revealed=true), show winner and allow close
+- [ ] 5. Prevent modal from closing accidentally (only close after winner revealed)
+- [ ] 6. Add minimize button to move modal to corner (optional)
+
+### Server-Authoritative Draw - Database (technical)
+ID: server-authoritative-draw-db
+
+**User Story:** As a system, I need a draws table to track draw state and broadcast realtime events instantly
+
+**Specs:**
+- [ ] 1. Create migration for draws table with id, group_id, created_by, status, revealed, start_timestamp, duration_seconds, winner_user_id, winner_name
+- [ ] 2. Add index on group_id for fast lookups
+- [ ] 3. Add RLS policies for draws table (users can view draws for their groups)
+- [ ] 4. Enable realtime for draws table in Supabase
+
+### Server-Authoritative Draw - Logic (feature)
+ID: server-authoritative-draw-logic
+
+**User Story:** As an admin, when I start a draw, all members see the spinner instantly via realtime events
+
+**Specs:**
+- [ ] 1. Update conductLuckyDraw to INSERT draw record with revealed=false FIRST
+- [ ] 2. Return draw metadata (drawId, startTimestamp, durationSeconds) to caller
+- [ ] 3. Keep existing winner selection and notifications (but don't block on them)
+- [ ] 4. Create finalizeDraw(drawId) function to set revealed=true (idempotent)
+- [ ] 5. Call finalizeDraw after admin spinner completes
+
+### Admin Business Logic (feature)
+ID: dual-admin-logic
+
+**User Story:** As a co-admin, I have full admin powers like the creator
+
+**Specs:**
+- [ ] 3.1. Replace all hardcoded admin checks with isGroupAdmin()
+- [ ] 3.2. Add appointCoAdmin() function to chitStore
+- [ ] 3.3. Add removeCoAdmin() function to chitStore
+- [ ] 3.4. Auto-clear co_admin_id when co-admin leaves group
+- [ ] 3.5. Add toast notifications for admin changes
+
+### Dual Admin Infrastructure (technical)
+ID: dual-admin-infrastructure
+
+**User Story:** As a developer, I need core infrastructure for dual admin support
+
+**Specs:**
+- [ ] 1.1. Update ChitGroup interface with co_admin_id field
+- [ ] 1.2. Create isGroupAdmin() utility helper function
+- [ ] 1.3. Create AdminBadge component for showing admin roles
+
+### Admin Management UI (feature)
+ID: dual-admin-ui
+
+**User Story:** As a group creator, I can appoint and manage a co-admin
+
+**Specs:**
+- [ ] 2.1. Create AdminManagementModal for appointing/removing co-admin
+- [ ] 2.2. Add admin management section to GroupDetailScreen
+- [ ] 2.3. Add admin management section to BiddingGroupDetailScreen
+- [ ] 2.4. Show admin badges in member lists
+
